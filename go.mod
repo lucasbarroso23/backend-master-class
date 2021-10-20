@@ -1,4 +1,4 @@
-module backend-master-class
+module github.com/lucasbarroso23/backend-master-class
 
 go 1.16
 
