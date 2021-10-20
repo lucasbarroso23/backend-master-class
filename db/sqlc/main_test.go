@@ -1,11 +1,12 @@
 package db
 
 import (
-	"backend-master-class/util"
 	"database/sql"
 	"log"
 	"os"
 	"testing"
+
+	"github.com/lucasbarroso23/backend-master-class/util"
 
 	_ "github.com/lib/pq" // postgres go driver
 )

@@ -1,11 +1,12 @@
 package db
 
 import (
-	"backend-master-class/util"
 	"context"
 	"database/sql"
 	"testing"
 	"time"
+
+	"github.com/lucasbarroso23/backend-master-class/util"
 
 	"github.com/stretchr/testify/require"
 )

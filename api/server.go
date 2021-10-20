@@ -1,7 +1,7 @@
 package api
 
 import (
-	db "backend-master-class/db/sqlc"
+	db "github.com/lucasbarroso23/backend-master-class/db/sqlc"
 
 	"github.com/gin-gonic/gin"
 )
