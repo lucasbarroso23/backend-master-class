@@ -17,11 +17,15 @@ func NewServer(store db.Store) *Server {
 	server := &Server{store: store}
 	router := gin.Default()
 
+	// accounts routes
 	router.GET("/accounts/:id", server.getAccount)
 	router.GET("/accounts", server.listAccount)
 	router.POST("/accounts", server.createAccount)
 	router.PUT("/accounts/:id", server.updateAccount)
 	router.DELETE("accounts/:id", server.deleteAccount)
+
+	// tranfer routes
+	router.POST("/transfer", server.createTransfer)
 
 	server.router = router
 	return server
